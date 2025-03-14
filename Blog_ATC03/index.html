@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>El Quisquilloso Blog</title>
+  </head>
+  <body id="home" class="bg-[#FFF3B0] font-mono">
+    <!-- Navbar -->
+    <nav class="border-gray-200 bg-[#400406] sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="./src/img/6969434_preview.png"
+            class="h-15"
+            alt="Hogwarts Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+            >El Quisquilloso</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 bg-[#400406] justify-center text-sm text-gray-500 rounded-lg md:hidden hover:text-[#E09F3E] focus:outline-none focus:ring-2 focus:ring-[#E09F3E]"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-transparent"
+          >
+            <li>
+              <a
+                href="#home"
+                class="block py-2 px-3 text-[#E09F3E] rounded-sm hover:text-[#E09F3E]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 px-3 text-white rounded-sm hover:text-[#E09F3E]"
+                >Sobre el sitio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 px-3 text-white rounded-sm hover:text-[#E09F3E]"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Main-->
+    <div class="flex flex-row justify-center">
+      <div class="basis-1/1">
+        <!--Header-->
+        <header id="header" class="w-full flex">
+          <div
+            class="grid grid-cols-2 w-full place-items-center py-10 pb-10"
+            id="header-content"
+          >
+            <h1
+              id="header-title"
+              class="text-[#9E2A2B] text-center font-bold text-2xl lg:text-6xl md:text-4xl transition-all duration-500"
+            >
+              Bienvenido a El Quisquilloso Blog
+            </h1>
+
+            <img
+              class="w-70 hover:scale-105 transition-transform duration-500"
+              src="./src/img/harry-potter-4077473_1280.png"
+              alt=""
+            />
+          </div>
+        </header>
+        <div
+          class="grid grid-cols-1 w-full p-3 lg:p-5 gap-4 lg:gap-8 lg:grid-cols-2"
+        >
+          <div class="text-justify">
+            <h2
+              class="text-[#9E2A2B] font-bold mb-6 text-2xl lg:text-4xl md:text-3xl"
+            >
+              El Mundo Mágico de Harry Potter
+            </h2>
+            <p class="text-[#335C67] mb-4 text-justify">
+              La saga de *Harry Potter*, creada por la autora J.K. Rowling, ha
+              cautivado a millones de lectores y espectadores a lo largo de las
+              décadas. Este blog está dedicado a explorar el universo mágico,
+              desde los personajes hasta las casas de Hogwarts, pasando por las
+              películas, los libros y mucho más. Únete a nosotros para descubrir
+              detalles, teorías y curiosidades sobre el mágico mundo de Harry
+              Potter.
+            </p>
+
+            <h3
+              class="text-[#9E2A2B] text-1xl lg:text-3xl md:text-2xl font-semibold mt-4 mb-2"
+            >
+              ¿Quién es Harry Potter?
+            </h3>
+            <p class="text-[#335C67] mb-4">
+              Harry James Potter es un mago que, a la edad de 11 años, descubre
+              que es un "niño que vivió", famoso por sobrevivir a un ataque
+              mortal de Lord Voldemort, quien asesinó a sus padres. Criado por
+              su cruel tía y su tío, Harry encuentra su verdadera identidad
+              cuando recibe una carta para asistir a la escuela de magia
+              Hogwarts. A lo largo de la saga, Harry enfrenta múltiples desafíos
+              y luchas contra el mal, mientras forma vínculos con personajes
+              clave como Ron Weasley y Hermione Granger.
+            </p>
+
+            <h3
+              class="text-[#9E2A2B] text-1xl lg:text-3xl md:text-2xl font-semibold mt-6 mb-2"
+            >
+              Las Casas de Hogwarts
+            </h3>
+            <p class="text-[#335C67] mb-4">
+              La escuela Hogwarts de Magia y Hechicería está dividida en cuatro
+              casas, cada una con sus propios valores y características. Los
+              estudiantes son seleccionados para una casa por el Sombrero
+              Seleccionador, y cada casa tiene su propia historia y legado.
+            </p>
+
+            <ul class="list-disc pl-5 text-[#335C67]">
+              <li>
+                <strong>Gryffindor:</strong> Representada por el león, esta casa
+                es conocida por su valentía, coraje y determinación. Sus
+                miembros son intrépidos, y muchos héroes como Harry Potter y
+                Hermione Granger pertenecen a ella.
+              </li>
+              <li>
+                <strong>Slytherin:</strong> Representada por la serpiente,
+                Slytherin valora la astucia, la ambición y la habilidad para
+                alcanzar el poder. Los miembros de esta casa, como Draco Malfoy,
+                a menudo buscan el éxito a cualquier costo.
+              </li>
+              <li>
+                <strong>Ravenclaw:</strong> Representada por el águila,
+                Ravenclaw es la casa que valora la inteligencia, la sabiduría y
+                la creatividad. Luna Lovegood, una de las amigas de Harry, es
+                uno de sus miembros más memorables.
+              </li>
+              <li>
+                <strong>Hufflepuff:</strong> Representada por el tejón,
+                Hufflepuff se destaca por su dedicación, lealtad y sentido de la
+                justicia. Cedric Diggory es un ejemplo destacado de esta casa.
+              </li>
+            </ul>
+          </div>
+
+          <div class="text-justify">
+            <div
+              id="default-carousel"
+              class="relative w-full"
+              data-carousel="slide"
+            >
+              <!-- Carousel wrapper -->
+              <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./src/img/harry-potter-4455031_1280.jpg"
+                    class="carousel-img absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg rounded-lg"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./src/img/ai-generated-8719014_1280.png"
+                    class="carousel-img absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg rounded-lg"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./src/img/castle-1176422_1280.jpg"
+                    class="carousel-img absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg rounded-lg"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./src/img/owl-4577775_1280.jpg"
+                    class="carousel-img absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg rounded-lg"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="./src/img/books-2612702_1280.jpg"
+                    class="carousel-img absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg rounded-lg"
+                    alt="..."
+                  />
+                </div>
+              </div>
+
+              <!-- Slider indicators -->
+              <div
+                class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+              >
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  data-carousel-slide-to="0"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 2"
+                  data-carousel-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 3"
+                  data-carousel-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 4"
+                  data-carousel-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 5"
+                  data-carousel-slide-to="4"
+                ></button>
+              </div>
+              <!-- Slider controls -->
+              <button
+                type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 1 1 5l4 4"
+                    />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+
+            <div>
+              <h3 class="text-[#9E2A2B] text-2xl font-semibold mt-6 mb-2">
+                Personajes Clave en la Saga
+              </h3>
+              <p class="text-[#335C67] mb-4">
+                A lo largo de los siete libros y ocho películas, una gran
+                variedad de personajes juegan papeles cruciales en el desarrollo
+                de la historia. Entre ellos se encuentran:
+              </p>
+              <ul class="list-disc pl-5 text-[#335C67]">
+                <li>
+                  <strong>Ron Weasley:</strong> El mejor amigo de Harry y un
+                  miembro fiel de Gryffindor, Ron es conocido por su lealtad y
+                  valentía.
+                </li>
+                <li>
+                  <strong>Hermione Granger:</strong> Inteligente, trabajadora y
+                  muy poderosa, Hermione es la mejor amiga de Harry y uno de los
+                  personajes más valientes de la saga.
+                </li>
+                <li>
+                  <strong>Albus Dumbledore:</strong> El director de Hogwarts y
+                  uno de los magos más poderosos de todos los tiempos, Albus
+                  Dumbledore es una figura paternal y mentor para Harry.
+                </li>
+                <li>
+                  <strong>Lord Voldemort:</strong> El principal antagonista de
+                  la saga, conocido como "El que no debe ser nombrado",
+                  Voldemort es un mago oscuro cuyo objetivo es dominar el mundo
+                  mágico y destruir a Harry Potter.
+                </li>
+              </ul>
+
+              <h3 class="text-[#9E2A2B] text-2xl font-semibold mt-6 mb-2">
+                La Batalla Final: ¿Cómo Termina la Saga?
+              </h3>
+              <p class="text-[#335C67] mb-4">
+                En el último libro, *Harry Potter y las Reliquias de la Muerte*,
+                la batalla final entre las fuerzas del bien y las del mal llega
+                a su clímax en el colegio Hogwarts. La lucha no solo es física,
+                sino también emocional y moral, con varios sacrificios de
+                personajes clave. La derrota de Voldemort y el fin de su reinado
+                de terror marca el cierre de la saga, pero el legado de los
+                personajes perdura en el corazón de los fans.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--section 1-->
+        <section id="about" class="py-16 px-6">
+          <div class="max-w-4xl mx-auto text-justify">
+            <h1
+              class="text-4xl font-bold mb-4 transition-all duration-500 text-[#9E2A2B] text-center p-15"
+            >
+              Sobre el Sitio
+            </h1>
+            <p class="text-lg mb-6 text-[#333]">
+              Este sitio web ha sido desarrollado con fines educativos como
+              parte de una actividad académica. Su temática está inspirada en el
+              universo de
+              <span class="text-[#9E2A2B] font-semibold">Harry Potter</span>,
+              una saga literaria y cinematográfica que ha marcado a
+              generaciones.
+            </p>
+            <p class="text-lg mb-6 text-[#333]">
+              La historia sigue a
+              <span class="text-[#9E2A2B] font-semibold">Harry Potter</span>, un
+              joven mago que, junto con sus amigos
+              <span class="text-[#9E2A2B] font-semibold">Hermione Granger</span>
+              y <span class="text-[#9E2A2B] font-semibold">Ron Weasley</span>,
+              vive aventuras en el Colegio Hogwarts de Magia y Hechicería.
+              Enfrentan desafíos mágicos, descubren secretos oscuros y luchan
+              contra el malvado
+              <span class="text-[#9E2A2B] font-semibold">Lord Voldemort</span>.
+            </p>
+            <p class="text-lg mb-6 text-[#333]">
+              El sitio web ofrece una experiencia inmersiva con elementos
+              visuales representativos, como los colores y símbolos de las casas
+              de
+              <span class="text-[#9E2A2B] font-semibold">Hogwarts</span>,
+              imágenes de personajes icónicos y referencias al universo mágico.
+              Su diseño interactivo facilita la exploración y el aprendizaje,
+              permitiendo a los usuarios conocer más sobre la saga.
+            </p>
+            <p class="text-lg font-semibold text-[#9E2A2B]">
+              Más que una simple página, este proyecto busca rendir homenaje a
+              <span class="text-[#9E2A2B]">Harry Potter</span> y ofrecer un
+              espacio educativo donde los fans y nuevos visitantes puedan
+              descubrir este mundo mágico de manera atractiva y didáctica.
+            </p>
+          </div>
+        </section>
+
+        <!--section 2-->
+        <section id="contact" class="py-36 px-6 bg-[#FFF3B0]">
+          <h1
+            class="text-4xl font-bold mb-4 transition-all duration-500 text-[#9E2A2B] text-center"
+          >
+            Deseas unirte a la comunidad?
+          </h1>
+          <p class="text-lg mb-6 text-[#333] p-15 text-center">
+            Suscríbete a nuestro boletín para recibir las últimas noticias y
+            actualizaciones sobre el mundo mágico de Harry Potter.
+          </p>
+          <form
+            id="contactForm"
+            class="max-w-md mx-auto bg-[#540B0E] p-6 rounded-lg shadow-lg mt-10 text-white"
+          >
+            <h2 class="text-xl font-bold mb-4 text-center">Contacto</h2>
+
+            <label class="block mb-2">
+              Nombre y Apellido:
+              <input
+                type="text"
+                id="name"
+                required
+                class="w-full p-2 border rounded-md"
+              />
+              <small id="nameError" class="text-red-500 hidden"
+                >Ingrese un nombre válido (mínimo 3 caracteres).</small
+              >
+            </label>
+
+            <label class="block mb-2">
+              Email:
+              <input
+                type="email"
+                id="email"
+                required
+                class="w-full p-2 border rounded-md"
+              />
+              <small id="emailError" class="text-red-500 hidden"
+                >Ingrese un correo válido.</small
+              >
+            </label>
+
+            <label class="block mb-2">
+              Mensaje:
+              <textarea
+                id="message"
+                required
+                class="w-full p-2 border rounded-md"
+              ></textarea>
+              <small id="messageError" class="text-red-500 hidden"
+                >El mensaje debe tener al menos 10 caracteres.</small
+              >
+            </label>
+
+            <button
+              type="submit"
+              class="bg-[#335C67] text-white px-4 py-2 rounded-md mt-2 w-full hover:bg-[#E09F3E] cursor-pointer"
+            >
+              Enviar
+            </button>
+          </form>
+        </section>
+      </div>
+      <aside class="bg-[#E09F3E] basis-1/8 lg:basis-1/5 p-4">
+        <h3
+          class="text-xl font-semibold mb-4 pb-5 text-center text-[#9E2A2B] lg:text-2xl border-b-2 border-[#9E2A2B]"
+        >
+          Noticias Recientes
+        </h3>
+        <ul class="space-y-4 text-[#335C67]">
+          <li class="flex flex-col space-y-2 border-b-2 border-[#9E2A2B]">
+            <a href="#" class="text-[#335C67] hover:text-indigo-800 text-center"
+              ><img
+                class="transition-transform hover:scale-105 border-2 border-[#9E2A2B] rounded-md"
+                src="./src/img/harry-potter-5055509_1280.jpg"
+                alt=""
+              />Nuevo libro sobre el Mundo Mágico será publicado este año</a
+            >
+          </li>
+          <li class="flex flex-col space-y-2 border-b-2 border-[#9E2A2B]">
+            <a href="#" class="text-[#335C67] hover:text-indigo-800 text-center"
+              ><img
+                class="transition-transform hover:scale-105 border-2 border-[#9E2A2B] rounded-md"
+                src="./src/img/harry-potter-2367608_1280.jpg"
+                alt=""
+              />Se filma un nuevo documental sobre los actores de Harry
+              Potter</a
+            >
+          </li>
+          <li class="flex flex-col space-y-2 border-b-2 border-[#9E2A2B]">
+            <a href="#" class="text-[#335C67] hover:text-indigo-800 text-center"
+              ><img
+                class="transition-transform hover:scale-105 border-2 border-[#9E2A2B] rounded-md"
+                src="./src/img/harry-potter-3745064_1280.jpg"
+                alt=""
+              />Anunciada una serie sobre la historia de los Merodeadores</a
+            >
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer class="bg-[#400406] shadow-lg">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="grid grid-cols-1 sm:items-center sm:justify-between gap-4">
+          <a
+            href="#"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse justify-center gap-4"
+          >
+            <img
+              src="./src/img/uba-logo-blanco-azul.png"
+              class="h-20"
+              alt="Flowbite Logo"
+            />
+            <span class="text-1xl font-semibold text-white text-center"
+              >REPÚBLICA BOLIVARIANA DE VENEZUELA <br />
+              UNIVERSIDAD BICENTENARIA DE ARAGUA VICERRECTORADO ACADÉMICO <br />
+              DECANATO DE INGENIERIA EN SISTEMAS ESCUELA DE INGENIERIA ELECTRICA
+              <br />SAN JOAQUÍN DE TURMERO - ESTADO TACHIRA
+            </span>
+          </a>
+
+          <ul
+            class="flex items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 justify-center pt-4"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6 text-white"
+                >AUTOR(A): Franciely Marian Vivas Sanclair
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6 text-white"
+                >CI. 29.734.515</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2025 <a href="#" class="hover:underline"></a>. All Rights
+          Reserved.</span
+        >
+      </div>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
